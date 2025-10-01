@@ -1,231 +1,160 @@
-# Portfolio Template
+<!DOCTYPE html>
+<html lang="en">
 
-### A beautiful minimal and accessible portfolio template for Developers ✨.
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
 
-To View the live site click [here &rarr;](https://portfolio-template.surge.sh)
+  <title>
+    Data Science & Business Student | Warren Wilson College
+  </title>
 
-![Portfolio Gif](/images/portfolio.gif)
+  <meta name="description" content="Portfolio of Kezong Lois Akundo, a Data Science, IT & Business student specializing in machine learning, data visualization, and AI applications." />
+  <meta name="keywords" content="Kezong Lois Akundo, Data Science, Business, R, Python, SQL, Machine Learning, Visualization, Grafana, Azure" />
+  <link rel="stylesheet" href="index.css" />
+</head>
 
-## Want to learn How to create a template like this ?
-
-You can watch [this video series](https://www.youtube.com/watch?v=1nchVfpMGSg&list=PLwJBGAxcH7GzdavgKlCACbESzr-40lw3L) on my youtube channel where I re-create this from scratch. 
-
-
-
-## Features
-
-- Clean, Simple and Modern UI Design.
-- Uses No CSS or JavaScript Frameworks or libraries as dependencies.
-- Built with only HTML, CSS and a bit of JavaScript 🔨.
-- Well Organized Documentation.
-- Keyboard support.
-- Fully Responsive.
-- Loads fast ⚡.
-
-## Lighthouse Report
-
-![Lighthouse Report](/images/lighthouse-report.png)
-
-### Contributions are warmly welcomed ❤️.
-
-## Getting Started 🚀
-
-You'll need [Git](https://git-scm.com) to be installed on your computer. 
-```
-# Clone this repository
-$ git clone https://github.com/nisarhassan12/portfolio-template
-```
-
-If you don't have Git installed or you don't like using the terminal then you can download the [zip](https://github.com/nisarhassan12/portfolio-template/archive/master.zip) and extract that and open the extracted folder in the code editor of your your choice.
-
-## Editing the Template 🔨
-
-Go to `index.html` and fill your information. 
-
-### Header
-
-In all of the places where you're supposed to fill your information you'll find HTML comments. As shown below just replace what is already in the opening and closing tags below the comment with your information.
-
-```html
-<div class="header__text-box row">
-    <div class="header__text">
-        <h1 class="heading-primary">
-        <!-- Replace the following name with your name -->
-        <span>Syed Ali Hussnain</span>
-        </h1>
-        <!-- Put a small paragraph about yourself -->
-        <p>A Web Developer based in Lahore, Pakistan.</p>
-        <a href="#contact" class="btn btn--pink">Get in touch</a>
-    </div>
-</div>
-```
-
-### Work Section
-
-Each div with class `work__box` represents a project, replace the contents of the all the tags with the information of your projects.
-
-```html
-<div class="work__box">
-    <div class="work__text">
-    <h3>Portfolio Template</h3>
-    <p>
-        A free Open Source Portfolio for anyone to use for free.
-    </p>
-    <ul class="work__list">
-        <li>HTML</li>
-        <li>SCSS</li>
-        <li>JavaScript</li>
-        <li>Parcel</li>
-    </ul>
-
-    <div class="work__links">
-        <a href="#" class="link__text">
-        Visit Site <span>&rarr;</span>
-        </a> 
-        <a href="https://github.com/nisarhassan12/portfolio" target="_blank">
-        <img src="./images/github.svg" class="work__code" alt="GitHub">
-        </a>
-    </div>
-    </div>
-    <div class="work__image-box">
-        <img
-            src="./images/project-1.png"
-            class="work__image"
-            alt="Project 1"
-        />
-    </div>
-</div>
-```
-
-For changing the screenshot:
-- first place the image in `images/` folder and then in HTML replace the name in `src` with the name of your image.
-
-- Recommended size for project image (1366 x 767px) also make sure the size of all  project images is the same.
-
-```html
-<img
-    src="./images/name-of-your-image.png"
-    class="work__image"
-    alt="Project 1"
-/>
-```
-
-### Clients Section
-
-- Place the logos of the clients and companies that you have worked with in `images/` directory and then replace the name in `src` with the name of your logos accordingly.
-
-- Make sure that you don't have whitespace on either side of the logos.
-
-```html
-<img
-    src="./images/your-logo.png"
-    class="client__logo"
-    alt="Your Logo"
-/>
-```
-
-### About Section
-
-- Replace the contents in the below paragraph with information about yourself.
-- Place a nice photo of yourself in the `images/` directory and then change the name in the src with your image name.
-
-```html
-<section class="about" id="about">
+<body>
+  <!-- ***** Header ***** -->
+  <header class="header" role="banner" id="top">
     <div class="row">
-        <h2>About Me</h2>
-        <div class="about__content">
-            <div class="about__text">
-                <!-- Replace the below paragraph with info about yourself -->
-                <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos id
-                nostrum illo harum blanditiis, tenetur eum suscipit cupiditate
-                in vel, ex quam quidem quos mollitia labore aut sunt eius
-                ratione molestiae fuga veniam facere similique voluptate.
-                </p>
-                <!-- Provide a link to your resume -->
-                <a href="#" class="btn">My Resume</a>
-            </div>
-
-            <div class="about__photo-container">
-                <!-- Add a nice photo of yourself -->
-                <img
-                class="about__photo"
-                src="./images/syed-ali-hussnain.jpg"
-                alt=""
-                />
-            </div>
-        </div>
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-</section>
-```
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary">
+          <span>Kezong Lois Akundo</span>
+        </h1>
+        <p>A Data Science & Business student based in Asheville, North Carolina.</p>
+        <a href="#contact" class="btn btn--pink">Get in touch</a>
+      </div>
+    </div>
+  </header>
 
-### Contact Section
-
-- Modify the paragraph to your likings.
-- Replace the email with yours in the `href` anchor property and the text also.
-
-```html
-<section class="contact" id="contact">
+  <main role="main">
+    <!-- ***** Work ***** -->
+    <section class="work" id="work">
       <div class="row">
-        <h2>Get in Touch</h2>
-        <div class="contact__info">
-          <p>
-            Are you looking for a fast-performing and user-friendly website to
-            represent your product or business? or looking for any kind of
-            consultation? or want to ask questions? or have some advice for me
-            or just want to say "Hi 👋" in any case feel free to Let me know. I
-            will do my best to respond back. 😊 The quickest way to reach out to
-            me is via an email.
-          </p>
-          <!-- Replace the email with yours -->
-          <a href="mailto:you@example.com" class="btn">you@example.com</a>
+        <h2>My Work</h2>
+        <div class="work__boxes">
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>PolicyCON – Data Analyst Intern</h3>
+              <p>Created real-time dashboards in Grafana & Azure to visualize and monitor key policy metrics, configured PostgreSQL databases, and automated analysis workflows using Python & JupyterLab.</p>
+              <ul class="work__list">
+                <li>Grafana</li>
+                <li>Azure</li>
+                <li>PostgreSQL</li>
+                <li>Python</li>
+              </ul>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/project-policycon.png" class="work__image" alt="PolicyCON dashboard project" />
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>UNESCO – Biophilic Design Research</h3>
+              <p>Analyzed student learning outcomes using surveys & interviews; visualized results with Python (Matplotlib, Pandas) and R; built an interactive website with JavaScript to showcase findings.</p>
+              <ul class="work__list">
+                <li>Python</li>
+                <li>R</li>
+                <li>JavaScript</li>
+                <li>Data Visualization</li>
+              </ul>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/project-unesco.png" class="work__image" alt="UNESCO research project" />
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>PARAGONE AI Externship</h3>
+              <p>Applied AI-powered tools for interview analysis; processed and interpreted qualitative data with NLP and Git/GitHub collaboration; strengthened AI application & data handling skills.</p>
+              <ul class="work__list">
+                <li>Natural Language Processing</li>
+                <li>Git/GitHub</li>
+                <li>AI Applications</li>
+              </ul>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/project-ai.png" class="work__image" alt="AI externship project" />
+            </div>
+          </div>
         </div>
       </div>
-</section>
-```
+    </section>
 
-### Footer
-
-- Replace the `href` attribute values to your profile URLs for all anchors.
-- Remove the div with class `footer__github-buttons`.
-
-```html
-<footer role="contentinfo" class="footer">
-    <div class="row">
-        <!-- Update the links to point to your accounts -->
-        <ul class="footer__social-links">
-            <li class="footer__social-link-item">
-                <a href="https://twitter.com/nisarhassan12/">
-                    <img src="./images/twitter.svg" class="footer__social-image" alt="Twitter">
-                </a>
-            </li>
-            <li class="footer__social-link-item">
-                <a href="https://github.com/nisarhassan12/">
-                    <img src="./images/github.svg" class="footer__social-image" alt="Github">
-                </a>
-            </li>
-            <li class="footer__social-link-item">
-                <a href="https://codepen.io/nisar_hassan">
-                    <img src="./images/codepen.svg" class="footer__social-image" alt="Codepen">
-                </a>
-            </li>
-            <li class="footer__social-link-item">
-                <a href=https://www.linkedin.com/in/nisar-hassan-naqvi-413466199/">
-                    <img src="./images/linkedin.svg" class="footer__social-image" alt="Linkedin">
-                </a>
-            </li>
-        </ul>
-
-        <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
-        <p>
-          &copy; 2020 - Template designed & developed by <a href="https://nisar.dev">Nisar</a>.
-        </p>
-        <div class="footer__github-buttons">
-          <iframe
-            src="https://ghbtns.com/github-btn.html?user=nisarhassan12&repo=portfolio-template&type=watch&count=true" 
-            frameborder="0" scrolling="0" width="170" height="20" title="Watch Portfolio Template on GitHub">
-          </iframe>
+    <!-- ***** Clients ***** -->
+    <section class="client" id="clients">
+      <div class="row">
+        <h2>Collaborations & Programs</h2>
+        <div class="client__logos">
+          <img src="./images/unesco.png" class="client__logo" alt="UNESCO" />
+          <img src="./images/policycon.png" class="client__logo" alt="PolicyCON" />
+          <img src="./images/forte.png" class="client__logo" alt="Forte Foundation" />
+          <img src="./images/viable-edu.png" class="client__logo" alt="Viable Edu" />
         </div>
+      </div>
+    </section>
+
+    <!-- ***** About ***** -->
+    <section class="about" id="about">
+      <div class="row">
+        <h2>About Me</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <p>
+              I’m a Data Science, IT & Business student at Warren Wilson College (expected 2026). 
+              I specialize in machine learning, data visualization, and applied analytics using R, Python, SQL, Grafana, and Azure. 
+              I’ve worked with organizations like UNESCO and PolicyCON, and I’m passionate about leveraging technology to solve 
+              real-world problems at the intersection of data and business.
+            </p>
+            <a href="./resume.pdf" class="btn">My Resume</a>
+          </div>
+          <div class="about__photo-container">
+            <img class="about__photo" src="./images/lois-akundo.jpg" alt="Kezong Lois Akundo" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ***** Contact ***** -->
+  <section class="contact" id="contact">
+    <div class="row">
+      <h2>Get in Touch</h2>
+      <div class="contact__info">
+        <p>If you’d like to collaborate, hire, or just chat about data science, AI, or business analytics, feel free to reach out. I’ll do my best to respond quickly!</p>
+        <a href="mailto:lakundo.f22@warren-wilson.edu" class="btn">lakundo.f22@warren-wilson.edu</a>
+      </div>
     </div>
-</footer>
-```
+  </section>
+
+  <!-- ***** Footer ***** -->
+  <footer role="contentinfo" class="footer">
+    <div class="row">
+      <ul class="footer__social-links">
+        <li><a href="https://github.com/yourgithub" title="GitHub Profile"><img src="./images/github.svg" alt="Github"></a></li>
+        <li><a href="https://www.linkedin.com/in/kezong-akundo-284867256/" title="LinkedIn Profile"><img src="./images/linkedin.svg" alt="LinkedIn"></a></li>
+      </ul>
+      <p>&copy; 2025 - Portfolio of Kezong Lois Akundo</p>
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  </a>
+  <script src="./index.js"></script>
+</body>
+</html>
